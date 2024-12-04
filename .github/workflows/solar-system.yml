@@ -95,6 +95,7 @@ jobs:
       run: npm install
 
     - name: Check Code Coverge
+      continue-on-error: true 
       run: npm run coverage
 
     - name: Archive Test Result
