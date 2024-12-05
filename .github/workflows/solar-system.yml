@@ -136,7 +136,9 @@ jobs:
     container:
       image:
         node:18
+        
     services:
+
       mongo-db:
         image: siddharth67/mongo-db
         options:
@@ -147,6 +149,7 @@ jobs:
         MONGO_PASSWORD: non-prod-password
     needs: [unit-testing, code-coverage]
     runs-on: ubuntu-latest
+        docker pull siddharth67/mongo-db
     permissions:
       packages: write 
     steps:
