@@ -138,7 +138,7 @@ jobs:
         node:18
     services:
       mongo-db:
-        image: siddharth67/mongo-db:non-prod
+        image: siddharth67/mongo-db
         options:
            --name mongo
     env:
